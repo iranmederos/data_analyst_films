@@ -25,3 +25,7 @@ async def runtime_evolution():
 @app.get("/actor_network")
 async def actor_network():
     return get_actor_network()
+
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
